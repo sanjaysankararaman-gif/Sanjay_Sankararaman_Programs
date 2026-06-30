@@ -26,4 +26,7 @@ A blind typing exercise built in Python. The program plays a pre-recorded audio 
 
 ## What I'd Add Next
 
-*(add a line or two here yourself — interviewers like seeing what you'd improve)*
+I would like to bring in AI integration in understanding the mistakes made by the user. After understanding it, the AI must be able to bring in by letters in the exercise for the user to improve.
+I am also planning on making the user interface similar to the very popular webiste MonkeyType and want to bring in all the functionality that it has and make it better. 
+
+The future goal is to develop to the point where it can help the user to be a master at "Touch Typing" and typing without any mistakes fluently and with ease.

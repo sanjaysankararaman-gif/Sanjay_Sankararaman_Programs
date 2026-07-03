@@ -6,7 +6,7 @@ Hi, I'm Sanjay Sankararaman, a B.Tech Information Technology student at Shiv Nad
 
 | Project | Description | Tech |
 |---|---|---|
-| [Typing Trainer](./typing-trainer) | A blind typing exercise that plays audio of letters and prompts the user to type them, with practice and test modes | Python, pygame |
+| [Typing Trainer](./Typing%20Trainer) | A blind typing exercise that plays audio of letters and prompts the user to type them, with practice and test modes | Python, pygame |
 
 *More projects will be added here as I build them.*
 

@@ -1,0 +1,10 @@
+#They are nested lists. They are called two dimensional lists.
+
+matrix=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+#They are used in machine learning and data science. For eg, an image is a matrix of pixels. Each pixel has a value that represents its color. The matrix can be used to manipulate the image, such as changing the brightness or contrast
+
+       

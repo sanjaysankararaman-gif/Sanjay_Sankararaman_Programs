@@ -1,0 +1,17 @@
+l1=eval(input("Enter a list with repeated values: "))
+
+#Method 1: Using set() to remove duplicates
+
+s1=set(l1)
+print(s1)
+
+#Method 2: Using a for loop 
+
+l1.sort()
+l=len(l1)
+
+for i in range(l-2):
+    if l1[i]==l1[i+1]:
+        del l1[i+1]
+
+print(l1)

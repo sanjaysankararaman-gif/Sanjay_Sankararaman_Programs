@@ -10,6 +10,12 @@ Hi, I'm Sanjay Sankararaman, a B.Tech Information Technology student at Shiv Nad
 
 *More projects will be added here as I build them.*
 
+## Practice & Learning
+
+| Folder | Description | Tech |
+|---|---|---|
+| [Python Course Programs](./Python_Course) | Personal Python programs and exercises | Python |
+
 ## About Me
 
 B.Tech Information Technology student at Shiv Nadar University, with a Computer Science background from school (PSBB KK Nagar, Chennai).

@@ -1,0 +1,66 @@
+print("Welcome to the Mock ATM")
+print("Please start by setting up your account")
+
+accnt_name = input("Enter account name:")
+initial_balance = float(input("Enter intial balance:"))
+pin = str(input("Enter 4 digit pin:"))
+
+balance = initial_balance
+
+n = 0
+b = True
+while b:
+    enter_pin = str(input("Enter you pin:"))
+    if enter_pin == pin:
+        print("Current Balance:", balance)
+        a = True
+        while a:
+            print("Enter 1 to Check balance")
+            print("Enter 2 to Deposit money")
+            print("Enter 3 to Withdraw money")
+            print("Enter 4 to change pin")
+            print("Enter 5 to exit")
+            choice = int(input("Enter number:"))
+
+            if choice == 1:
+                print("Current Balance:", balance)
+
+            elif choice == 2:
+                deposit_money = float(input("Enter amount to be deposited ="))
+                balance += deposit_money
+                print("Current Balance =", balance)
+
+            elif choice == 3:
+                withdraw_amount = float(input("Enter amount to be withdrawn"))
+                if withdraw_amount <= balance:
+                    if withdraw_amount > 50000:
+                        print("Maximum transaction amount is ₹50000")
+                    else:
+                        balance = balance - withdraw_amount
+                        print("Current Balance =", balance)
+                else:
+                    print("Insufficient Balance")
+
+            elif choice == 4:
+                new_pin = str(input("Enter new pin ="))
+                pin = new_pin
+                print("PIN updated successfully!")
+
+            elif choice == 5:
+                a = False
+                b = False
+                print("Invalid choice! Please select an option from 1 to 5.")
+
+
+    else:
+        print("Incorrect Pin")
+        n += 1
+        if n == 4:
+            print("Incorrect Pin. Please start over")
+            b = False
+            
+
+
+
+        
+            

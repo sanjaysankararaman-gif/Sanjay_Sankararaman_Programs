@@ -1,0 +1,16 @@
+mass = float(input("Enter the mass of the object:"))
+velocity = float(input("Enter the velocity of the object:"))
+height = float(input("Enter the height at which the object is present:"))
+
+#The input for mass, velocity and height is taken in float because they can be decimal values
+
+g = 9.8 #acceleration due to gravity
+
+kinetic_energy = 0.5 * mass * ((velocity)**2)
+potential_energy = mass * g * height
+
+total_energy = kinetic_energy + potential_energy
+
+print("Kinetic Energy of the object =", kinetic_energy)
+print("Potential Energy of the object =", potential_energy)
+print("Total Energy of the object =", total_energy)

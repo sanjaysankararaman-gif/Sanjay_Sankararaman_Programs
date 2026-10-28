@@ -1,0 +1,10 @@
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_0.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_1.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_2.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_3.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_4.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_5.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_6.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_7.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_8.txt on Thursday 17 September 2026 02:32:45 PM IST
+Removed /home/it26150975/Operating_Systems/EX_4/Q4_files/file_9.txt on Thursday 17 September 2026 02:32:45 PM IST

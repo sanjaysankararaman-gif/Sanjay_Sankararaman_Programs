@@ -1,0 +1,38 @@
+n = int(input('Enter number of transaction:')) #Getting number of transactions from user
+
+trans_5000 = 0 #number of transactions greater than 5000
+
+first_trans = float(input("Enter transaction amount ="))
+
+#Recording the first transaction alone outside the loop to intialise the lowest and the highest variable
+#to an initial amount so that they can be compared
+#when lowest is initialised to 0, since there can be no negative transactions (money is only being spent), 
+#the lowest amount spend will alqways be zero
+
+highest = first_trans
+lowest = first_trans
+total_sum = first_trans
+
+if first_trans > 5000:
+    trans_5000 += 1
+
+for i in range(n-1): #since the first transaction is being recorded outside the loop, the loop needs to only run for n-1 times
+    transaction = float(input("Enter transaction amount ="))
+    total_sum += transaction
+
+    if transaction > highest:
+        highest = transaction
+    if transaction < lowest:
+        lowest = transaction 
+
+    if transaction > 5000:
+        trans_5000 += 1
+
+
+print("Total amount spent =", total_sum)
+print("Average amount spent =", total_sum/n)
+print("Number of transactions greater than ₹5000 =", trans_5000)
+print("Highest amount spent =", highest)
+print("Lowest amount spent =", lowest)
+
+

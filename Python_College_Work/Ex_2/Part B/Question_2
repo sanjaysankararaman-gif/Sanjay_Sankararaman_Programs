@@ -1,0 +1,39 @@
+n = int(input("Enter number of order delivered:"))
+
+ratings_number = 0
+total_ratings = 0
+number_fivestar = 0
+poor_service = 0
+four_and_above = 0
+
+for i in range(n):
+    rating = str(input("Enter rating between 1 to 5 or enter skip to not give your rating:"))
+
+    if rating.lower() == "skip":
+        continue
+    else:
+        ratings_number += 1
+        total_ratings += int(rating)
+
+        if int(rating) == 5:
+            number_fivestar += 1
+
+        if int(rating) < 3:
+            poor_service += 1
+
+        if int(rating) >= 4:
+            four_and_above += 1
+
+print("Total number of ratings received =", ratings_number)
+print("Average rating received =", total_ratings/ratings_number)
+print("Number of 5 star ratings =", number_fivestar)
+print("Number of ratings below 3 =", poor_service)
+print("Percentage of orders rated 4 or above =", ((four_and_above/ratings_number) * 100))
+
+
+
+
+
+
+
+    

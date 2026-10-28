@@ -1,0 +1,10 @@
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_0.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_1.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_2.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_3.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_4.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_5.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_6.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_7.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_8.txt
+/home/it26150975/Operating_Systems/EX_5/Q2/documents/text_9.txt

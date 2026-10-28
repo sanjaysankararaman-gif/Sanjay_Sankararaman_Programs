@@ -1,0 +1,11 @@
+import cmath
+a = float(input("Enter the co-efficient of x²:"))
+b = float(input("Enter the co-efficeint of x:"))
+c= float(input("Enter the constant:"))
+
+d = ((b**2) - 4 * a * c)  #calculating discriminant
+
+x_1 = -b + cmath.sqrt(d)
+x_2 = -b - cmath.sqrt(d)
+
+print("The roots of the quadratic equation are =", x_1,",", x_2)

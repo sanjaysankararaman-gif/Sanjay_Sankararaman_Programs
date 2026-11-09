@@ -29,8 +29,5 @@ An interactive, immersive Solar System built in Unity for VR. The aim is to let 
 
 ## What I'm Working On Next
 
-*(add your own lines here, for example VR interaction, labels for each planet, or scaling)*
+I am working on adding a walkthrough feature as an educational feature for kids.
 
-## Running It
-
-Open the folder in Unity Hub with the same Unity version listed in `ProjectSettings/ProjectVersion.txt`, then open `Assets/Scenes/SolarSystem.unity`.

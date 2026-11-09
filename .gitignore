@@ -1,4 +1,11 @@
 .DS_Store
 **/.DS_Store
 Thumbs.db
-*.swp
+*.swp# Unity generated folders
+Solar System/Library/
+Solar System/Temp/
+Solar System/Obj/
+Solar System/Logs/
+Solar System/UserSettings/
+Solar System/Build/
+Solar System/Builds/

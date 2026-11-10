@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Food Delivery App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container-fluid p-0 mb-4">
+
+    <nav class="navbar navbar-expand-md bg-danger" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">QuickBite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#restaurant">Restaurant</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#checkout">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="#checkout">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+
+<div class="container">
+
+    <div id="carousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner rounded shadow-sm">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="briyani.jpg" class="d-block img-fluid mx-auto w-100" style="max-height: 400px; object-fit: cover;" alt="Biryani">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">50% off on Biryani</h2>
+                    <p>Offer is valid only till 10th November 2026</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="delivery.jpg" class="d-block img-fluid mx-auto w-100" style="max-height: 400px; object-fit: cover;" alt="Delivery">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">Free Delivery for orders above ₹99</h2>
+                    <p>Terms and Conditions apply</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="dessert.jpg" class="d-block img-fluid mx-auto w-100" style="max-height: 400px; object-fit: cover;" alt="Desserts">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">Desserts starting at ₹99</h2>
+                    <p>Offer available at only qualifying restaurants</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="restaurants-near-you rounded-3 bg-white p-4 shadow-sm mb-5" id="restaurant">
+        <section class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-3">
+            <h2 class="display-6 text-primary fw-bold mb-0">Restaurants Near You</h2>
+            <div class="btn-group" role="group" aria-label="Food Filter">
+                <button class="btn btn-primary">All</button>
+                <button class="btn btn-outline-success">Veg</button>
+                <button class="btn btn-outline-danger">Non-Veg</button>
+            </div>
+        </section>
+        
+        <div class="row g-4 mt-1">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="briyani.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="The Royal Biryani">
+                        <span class="position-absolute top-0 end-0 m-2 badge bg-danger text-white fw-bold">Non-Veg</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title fw-bold mb-0">The Royal Biryani Hub</h5>
+                            <span class="badge bg-warning text-dark fw-bold">4.7 ★</span>
+                        </div>
+                        <p class="card-text text-muted small mb-1">Mughlai • North Indian • Hyderabadi</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-2 text-secondary small">
+                            <span>⏱️ 25-30 mins</span>
+                            <span class="fw-medium text-success">₹150 for two</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="pizza.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Pizzeria">
+                        <span class="position-absolute top-0 end-0 m-2 badge bg-success text-white fw-bold">Veg</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title fw-bold mb-0">Cafe Napoli Woodfire</h5>
+                            <span class="badge bg-warning text-dark fw-bold">4.4 ★</span>
+                        </div>
+                        <p class="card-text text-muted small mb-1">Italian • Pizzas • Pastas • Beverages</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-2 text-secondary small">
+                            <span>⏱️ 35-40 mins</span>
+                            <span class="fw-medium text-success">₹300 for two</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="smoothie.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Dessert Lounge">
+                        <span class="position-absolute top-0 end-0 m-2 badge bg-success text-white fw-bold">Veg</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title fw-bold mb-0">The Sugar Whipped Lounge</h5>
+                            <span class="badge bg-warning text-dark fw-bold">4.6 ★</span>
+                        </div>
+                        <p class="card-text text-muted small mb-1">Desserts • Bakery • Ice Cream • Waffles</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-2 text-secondary small">
+                            <span>⏱️ 15-20 mins</span>
+                            <span class="fw-medium text-success">₹200 for two</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row g-4 mb-5">
+        <div class="col-12 col-md-8" id="menu">
+            <div class="bg-white p-4 rounded-3 shadow-sm">
+                <!-- Nav Tabs -->
+                <ul class="nav nav-tabs mb-4" id="contentTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-bold" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menu-pane" type="button" role="tab" aria-controls="menu-pane" aria-selected="true">Menu</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-pane" type="button" role="tab" aria-controls="reviews-pane" aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="contentTabsContent">
+                    <!-- Menu Tab Pane -->
+                    <div class="tab-pane fade show active" id="menu-pane" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover table-bordered align-middle">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Dish</th>
+                                        <th>Type</th>
+                                        <th>Price (Rs.)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-medium">Paneer Butter Masala</td>
+                                        <td><span class="badge bg-success">Veg</span></td>
+                                        <td>Rs. 90</td>
+                                        <td><button class="btn btn-primary btn-sm rounded-2">+ Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-medium">Chicken Tikka Masala</td>
+                                        <td><span class="badge bg-danger">Non Veg</span></td>
+                                        <td>Rs. 350</td>
+                                        <td><button class="btn btn-primary btn-sm rounded-2">+ Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-medium">Hyderabadi Chicken Biryani</td>
+                                        <td><span class="badge bg-danger">Non Veg</span></td>
+                                        <td>Rs. 500</td>
+                                        <td><button class="btn btn-primary btn-sm rounded-2">+ Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-medium">Gulab Jamun (2 Pcs)</td>
+                                        <td><span class="badge bg-success">Veg</span></td>
+                                        <td>Rs. 120</td>
+                                        <td><button class="btn btn-primary btn-sm rounded-2">+ Add</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="reviews-pane" role="tabpanel" aria-labelledby="reviews-tab">
+                        <div class="card mb-3 border-light-subtle shadow-sm">
+                            <div class="card-body d-flex align-items-start gap-3">
+                                <img src="profile.jpg" class="rounded-circle flex-shrink-0" width="50" height="50" alt="profile">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="fw-bold mb-0">Rohan Sharma</h6>
+                                        <span class="badge text-bg-primary rounded-pill">4.5 ★</span>
+                                    </div>
+                                    <blockquote class="blockquote mb-0 fs-6 text-muted">
+                                        <p class="mb-0">"The Hyderabadi Chicken Biryani was absolutely authentic, aromatic, and cooked to perfection! The meat was tender and full of flavor. Delivery was lightning fast!"</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 border-light-subtle shadow-sm">
+                            <div class="card-body d-flex align-items-start gap-3">
+                                <img src="profile.jpg" class="rounded-circle flex-shrink-0" width="50" height="50" alt="profile">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="fw-bold mb-0">Ananya Verma</h6>
+                                        <span class="badge text-bg-primary rounded-pill">4.2 ★</span>
+                                    </div>
+                                    <blockquote class="blockquote mb-0 fs-6 text-muted">
+                                        <p class="mb-0">"Paneer Butter Masala was super rich and creamy. Garlic Naan arrived piping hot and soft. Highly recommended for family dinners!"</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-light-subtle shadow-sm">
+                            <div class="card-body d-flex align-items-start gap-3">
+                                <img src="profile.jpg" class="rounded-circle flex-shrink-0" width="50" height="50" alt="profile">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="fw-bold mb-0">Priya Patel</h6>
+                                        <span class="badge text-bg-primary rounded-pill">4.7 ★</span>
+                                    </div>
+                                    <blockquote class="blockquote mb-0 fs-6 text-muted">
+                                        <p class="mb-0">"Sweet cravings satisfied! Gulab Jamuns were soft and warm. Clean eco-friendly packaging too."</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 sticky-top" style="top: 20px;">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="card-title mb-0 fw-bold">Your Cart</h5>
+                </div>
+                
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Paneer Butter Masala</h6>
+                            <small class="text-muted">Rs. 90 each</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill fs-6">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Hyderabadi Biryani</h6>
+                            <small class="text-muted">Rs. 500 each</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill fs-6">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Gulab Jamun (2 Pcs)</h6>
+                            <small class="text-muted">Rs. 120 each</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill fs-6">1</span>
+                    </li>
+                    
+                    <!-- Total Amount Row -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light py-3">
+                        <span class="fw-bold fs-5">Total Amount</span>
+                        <span class="fw-bold fs-5 text-success">Rs. 1,210</span>
+                    </li>
+                </ul>
+
+
+                <div class="card-body">
+                    <button type="button" 
+                            class="btn btn-outline-danger w-100 fw-bold py-2" 
+                            data-bs-toggle="popover" 
+                            data-bs-title="BIRYANI50 Terms & Conditions" 
+                            data-bs-content="Get 50% discount up to Rs. 150 on orders containing Biryani items over Rs. 400. Applicable once per account."
+                            data-bs-placement="bottom">
+                        Apply offer: BIRYANI50
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mb-5" id="checkout">
+        <div class="col-12 col-lg-7">
+            <div class="bg-white p-4 rounded-3 shadow-sm">
+                <h3 class="fw-bold mb-4 text-danger">Checkout</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label fw-semibold">Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mobileNumber" class="form-label fw-semibold">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobileNumber" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="10-digit mobile number" required>
+                        <div class="invalid-feedback">Please enter exactly 10 digits for mobile number.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="deliveryAddress" class="form-label fw-semibold">Delivery Address</label>
+                        <textarea class="form-control" id="deliveryAddress" rows="3" placeholder="Enter full delivery address" required></textarea>
+                        <div class="invalid-feedback">Delivery address is required.</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold d-block">Payment Mode</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMode" id="paymentUPI" value="upi" required>
+                            <label class="form-check-label" for="paymentUPI">UPI</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMode" id="paymentCOD" value="cod" required>
+                            <label class="form-check-label" for="paymentCOD">Cash on Delivery</label>
+                        </div>
+                        <div class="invalid-feedback">Please select a payment mode.</div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <button type="submit" class="btn btn-danger fw-bold px-4 place-order-btn">
+                            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                            Placing order...
+                        </button>
+                        <button type="reset" class="btn btn-outline-secondary px-4">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+            <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                <h4 class="fw-bold mb-3">Order Status</h4>
+                <div class="status-box mb-3 fw-bold text-primary fs-5"></div>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success track-bar fw-bold" role="progressbar" style="width: 25%;">Tracking</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 QuickBite. All rights reserved.</div>
+        <div>Support: support@quickbite.com</div>
+        <div>Working Hours: 9:00 AM - 11:00 PM</div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
